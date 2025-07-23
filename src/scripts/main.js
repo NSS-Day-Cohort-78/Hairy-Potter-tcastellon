@@ -35,11 +35,5 @@ let potteryToSell = usePottery()
 // console.log(ashtrays)
 // console.log(bowls)
 
-
-
-
-
-
-
 // Invoke the component function that renders the HTML list
 
