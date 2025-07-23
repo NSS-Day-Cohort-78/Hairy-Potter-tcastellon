@@ -11,7 +11,7 @@ export const toSellOrNotToSell = (maybeForSalePottery) => {
         return
     } else if(maybeForSalePottery.weight >= 6) {
         maybeForSalePottery.price = 40
-    } else if(maybeForSalePottery.price < 6) {
+    } else if(maybeForSalePottery.weight < 6) {
         maybeForSalePottery.price = 20
     }
     //Return the array of items to be sold
