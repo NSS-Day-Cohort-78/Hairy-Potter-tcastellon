@@ -7,15 +7,15 @@ export const potteryList = (potteryToSell) => {
     for (const pottery of potteryToSell) {
         potteryToSellHTML +=`
         <section class="pottery" id="pottery--1">
-        <h2 class="pottery__shape">${potteryToSell.shape}</h2>
+        <h2 class="pottery__shape">${pottery.shape}</h2>
             <div class="pottery__properties">
-                Item weighs ${potteryToSell.weight} grams and is ${potteryToSell.height} cm in height
+                Item weighs ${pottery.weight} grams and is ${pottery.height} cm in height
             </div>
-            <div class="pottery__price">Price is ${potteryToSell.price}</div>
+            <div class="pottery__price">Price is ${pottery.price}</div>
         </section>
         `
     }
-    
+    return potteryToSellHTML
 }
 
 //potteryList function must return a single string that contains all of the pottery HTML representation
